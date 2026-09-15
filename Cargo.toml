@@ -19,16 +19,16 @@ armature-core = { version = "0.9" }
 armature-azure = { version = "0.2", optional = true }
 
 # Async runtime
-tokio = { version = "1.52", features = ["macros", "rt-multi-thread", "net", "time"] }
+tokio = { version = "1.53", features = ["macros", "rt-multi-thread", "net", "time"] }
 async-trait = "0.1"
 
 # HTTP server for custom handler
-hyper = { version = "1.10", features = ["server", "http1"] }
+hyper = { version = "1.11", features = ["server", "http1"] }
 hyper-util = { version = "0.1", features = ["tokio", "server"] }
 http-body-util = "0.1"
 
 # HTTP types
-http = "1.4"
+http = "1.5"
 bytes = "1.12"
 
 # Serialization
@@ -42,7 +42,7 @@ thiserror = "2.0"
 urlencoding = "2.1"
 
 # Base64 for binary responses
-base64 = "0.22"
+base64 = "0.23"
 
 # Tracing
 tracing = "0.1"
@@ -50,7 +50,7 @@ tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
 
 [dev-dependencies]
 cargo-husky = { version = "1.5", default-features = false, features = ["user-hooks"] }
-tokio = { version = "1.52", features = ["rt-multi-thread", "macros", "sync", "time", "net", "io-util", "fs", "test-util"] }
+tokio = { version = "1.53", features = ["rt-multi-thread", "macros", "sync", "time", "net", "io-util", "fs", "test-util"] }
 
 [features]
 default = []
