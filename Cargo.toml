@@ -13,7 +13,7 @@ categories = ["web-programming", "asynchronous"]
 
 [dependencies]
 # Armature core
-armature-core = { version = "0.12" }
+armature-core = { version = "0.13" }
 
 # Azure SDK (optional, for Azure service access)
 armature-azure = { version = "0.4", optional = true }
